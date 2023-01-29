@@ -37,7 +37,7 @@ const articles = {
     
       options : {
         source: "title",
-        slugify: input => input.toLowerCase().replace(/\s+/g, '-').slice(0,200)
+        slugify: (input: string) => input.toLowerCase().replace(/\s+/g, '-').slice(0,200)
       }
     },
     {
@@ -61,7 +61,7 @@ const articles = {
       author: "author.name",
       media: "articleImage",
     },
-    prepare(selection) {
+    prepare(selection: { author: any; }) {
       const { author } = selection;
       return Object.assign({}, selection, {
         subtitle: author && `by ${author}`,
