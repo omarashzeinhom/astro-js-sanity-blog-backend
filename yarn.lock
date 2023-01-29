@@ -1622,6 +1622,11 @@
   resolved "https://registry.yarnpkg.com/@sanity/generate-help-url/-/generate-help-url-3.0.0.tgz#60e9cba61b82103ea3761730a53cd9310b98892d"
   integrity sha512-wtMYcV5GIDIhVyF/jjmdwq1GdlK07dRL40XMns73VbrFI7FteRltxv48bhYVZPcLkRXb0SHjpDS/icj9/yzbVA==
 
+"@sanity/icons@^1.3":
+  version "1.3.10"
+  resolved "https://registry.yarnpkg.com/@sanity/icons/-/icons-1.3.10.tgz#df934a94ae6669fe6b15515d800afb221cba0498"
+  integrity sha512-5wVG/vIiGuGrSmq+Bl3PY7XDgQrGv0fyHdJI64FSulnr2wH3NMqZ6C59UFxnrZ93sr7kOt0zQFoNv2lkPBi0Cg==
+
 "@sanity/icons@^2.1.0", "@sanity/icons@^2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@sanity/icons/-/icons-2.2.2.tgz#678386dcd07ac481e456afd07f29be3c86c54c15"
@@ -1655,6 +1660,14 @@
     rimraf "^3.0.2"
     split2 "^3.2.2"
     tar-fs "^2.1.1"
+
+"@sanity/incompatible-plugin@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@sanity/incompatible-plugin/-/incompatible-plugin-1.0.4.tgz#c369af3b629de6c01e5843373fb3ede9972a53f4"
+  integrity sha512-2z39G9PTM8MXOF4fJNx3TG4tH0RrTjtH6dVLW93DSjCPbIS7FgCY5yWjZfQ+HVkwhLsF7ATDAGLA/jp65pFjAg==
+  dependencies:
+    "@sanity/icons" "^1.3"
+    react-copy-to-clipboard "^5.1.0"
 
 "@sanity/logos@^2.0.2":
   version "2.1.2"
@@ -1807,10 +1820,22 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
   integrity sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==
 
+"@types/codemirror@~5.60.5":
+  version "5.60.7"
+  resolved "https://registry.yarnpkg.com/@types/codemirror/-/codemirror-5.60.7.tgz#efbb78e5e79f90c6762c2127c02096648e600808"
+  integrity sha512-QXIC+RPzt/1BGSuD6iFn6UMC9TDp+9hkOANYNPVsjjrDdzKphfRkwQDKGp2YaC54Yhz0g6P5uYTCCibZZEiMAA==
+  dependencies:
+    "@types/tern" "*"
+
 "@types/diff-match-patch@^1.0.32":
   version "1.0.32"
   resolved "https://registry.yarnpkg.com/@types/diff-match-patch/-/diff-match-patch-1.0.32.tgz#d9c3b8c914aa8229485351db4865328337a3d09f"
   integrity sha512-bPYT5ECFiblzsVzyURaNhljBH2Gh1t9LowgUwciMrNAhFewLkHT2H0Mto07Y4/3KCOGZHRQll3CTtQZ0X11D/A==
+
+"@types/estree@*":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.0.tgz#5fb2e536c1ae9bf35366eed879e827fa59ca41c2"
+  integrity sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==
 
 "@types/glob@^7.1.1":
   version "7.2.0"
@@ -1904,6 +1929,13 @@
   version "13.0.3"
   resolved "https://registry.yarnpkg.com/@types/speakingurl/-/speakingurl-13.0.3.tgz#cbfe3d0182c7af92ebac7e587bb9228472e05133"
   integrity sha512-nBHZAaNTEw1YG3ROL7HtTp7HjW8HD7DuFYbWoonUKTZHj7eyOt4vPzyMcc3+xgWNv7xi2rziaiBXHIq6wBeyrw==
+
+"@types/tern@*":
+  version "0.23.4"
+  resolved "https://registry.yarnpkg.com/@types/tern/-/tern-0.23.4.tgz#03926eb13dbeaf3ae0d390caf706b2643a0127fb"
+  integrity sha512-JAUw1iXGO1qaWwEOzxTKJZ/5JxVeON9kvGZ/osgZaJImBnyjyn0cjovPsf6FNLmyGY8Vw9DoXZCMlfMkMwHRWg==
+  dependencies:
+    "@types/estree" "*"
 
 "@types/unist@*", "@types/unist@^2.0.0":
   version "2.0.6"
@@ -5053,7 +5085,7 @@ react-clientside-effect@^1.2.6:
   dependencies:
     "@babel/runtime" "^7.12.13"
 
-react-copy-to-clipboard@^5.0.4:
+react-copy-to-clipboard@^5.0.4, react-copy-to-clipboard@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/react-copy-to-clipboard/-/react-copy-to-clipboard-5.1.0.tgz#09aae5ec4c62750ccb2e6421a58725eabc41255c"
   integrity sha512-k61RsNgAayIJNoy9yDsYzDe/yAZAzEbEgcz3DZMhF686LEyukcE1hzurxe85JandPUG+yTfGVFzuEw3xt8WP/A==
@@ -5123,6 +5155,13 @@ react-rx@^2.1.3:
   dependencies:
     observable-callback "^1.0.2"
     use-sync-external-store "^1.2.0"
+
+react-simplemde-editor@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/react-simplemde-editor/-/react-simplemde-editor-5.2.0.tgz#7a4c8b97e4989cb129b45ba140145d71bdc0684e"
+  integrity sha512-GkTg1MlQHVK2Rks++7sjuQr/GVS/xm6y+HchZ4GPBWrhcgLieh4CjK04GTKbsfYorSRYKa0n37rtNSJmOzEDkQ==
+  dependencies:
+    "@types/codemirror" "~5.60.5"
 
 react-style-proptype@^3.2.2:
   version "3.2.2"
@@ -5397,6 +5436,15 @@ sanity-diff-patch@^1.0.9:
   integrity sha512-J5YeuM/S7rLTp51iqUunwzz7Rf68K/jCDGKtNCj6Wzcfgf9CH+0GtPlvf2DFsg0QQhYYZ72FOVn6skmoLjMCdw==
   dependencies:
     diff-match-patch "^1.0.5"
+
+sanity-plugin-markdown@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/sanity-plugin-markdown/-/sanity-plugin-markdown-4.0.0.tgz#803b542335e3a97576fb68abe5ed4e4b6dabf906"
+  integrity sha512-SZkMjUTXuACth7FxSxTmy917EpkfZH7zJpukSb6TKsTMrjvY9BhWz3jpf2Kqas/ipDHaTnYTto11X00YAKw5gw==
+  dependencies:
+    "@sanity/incompatible-plugin" "^1.0.4"
+    "@sanity/ui" "^1.0.0"
+    react-simplemde-editor "^5.2.0"
 
 sanity@^3.0.0:
   version "3.2.5"
